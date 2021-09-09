@@ -1,8 +1,8 @@
 <template>
-  <v-app>
-    <v-app-bar app prominent flat class="navbar_container">
-      <v-app-bar-nav-icon />
-      <img src="../assets/logoneg.png" class="navbar_logo" />
+  <v-app-bar app prominent flat class="navbar_container">
+    <v-app-bar-nav-icon />
+    <img src="../assets/logoneg.png" class="navbar_logo" />
+    <div class="navbar_top_section">
       <div class="search_input_container">
         <input
           class="search_input"
@@ -11,8 +11,14 @@
         />
         <button class="search_button">Buscar</button>
       </div>
-    </v-app-bar>
-  </v-app>
+      <div>
+        <v-btn large text color="white" class="profile_button">Mi cuenta</v-btn>
+        <v-btn large outlined color="#ddd">$0,00</v-btn>
+      </div>
+    </div>
+
+    <div class="navbar_bottom_section"></div>
+  </v-app-bar>
 </template>
 
 <script>
@@ -38,6 +44,12 @@
     object-fit: contain;
   }
 
+  .navbar_top_section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .search_input_container {
     width: 40rem;
     background: whitesmoke;
@@ -58,6 +70,9 @@
   }
 
   .search_button {
-    background: gray;
+    background: #353535;
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
   }
 </style>
