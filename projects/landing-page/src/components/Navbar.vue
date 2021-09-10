@@ -17,7 +17,9 @@
       </div>
     </div>
 
-    <div class="navbar_bottom_section"></div>
+    <div class="navbar_bottom_section">
+      <div class="navbar_categories"></div>
+    </div>
   </v-app-bar>
 </template>
 
@@ -40,7 +42,7 @@
   }
 
   .navbar_logo {
-    width: 12rem;
+    width: 15%;
     object-fit: contain;
   }
 
