@@ -6,6 +6,7 @@
     <DogsCategory />
     <CatsCategory />
     <Sections />
+    <Info />
   </v-main>
 </template>
 
@@ -16,6 +17,7 @@
   import DogsCategory from './DogsCategory';
   import CatsCategory from './CatsCategory';
   import Sections from './Sections';
+  import Info from './Info';
 
   export default {
     name: 'Hero',
@@ -27,6 +29,7 @@
       DogsCategory,
       CatsCategory,
       Sections,
+      Info,
     },
   };
 </script>
