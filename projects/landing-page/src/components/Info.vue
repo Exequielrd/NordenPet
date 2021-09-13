@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pt-15">
+  <v-container class="pt-15 pb-15">
     <h1 class="title">
       Sabemos que la salud de tu gato o perro es importante para vos y tan única
       como ellos mismos. Por eso, te ofrecemos la más amplia variedad de

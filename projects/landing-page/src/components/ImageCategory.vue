@@ -1,7 +1,7 @@
 <template>
-  <div class="dog_category">
-    <img :src="image" alt="dog section" style="width: 100%" />
-    <h1 class="dog_category_title">{{ title }}</h1>
+  <div class="category_container">
+    <img :src="image" :alt="title" style="width: 100%" />
+    <h1 class="category_title">{{ title }}</h1>
 
     <div class="category_bottom"></div>
     <v-btn color="black white--text" large class="category_button"
@@ -18,15 +18,15 @@
 </script>
 
 <style scoped>
-  .dog_category {
-    max-width: 22rem;
+  .category_container {
+    min-width: 22rem;
     height: 30rem;
     color: whitesmoke;
     position: relative;
     overflow: hidden;
   }
 
-  .dog_category_title {
+  .category_title {
     width: 10rem;
     position: absolute;
     top: 30%;

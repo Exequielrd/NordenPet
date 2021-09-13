@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row>
+    <div class="d-flex">
       <v-slide-group class="mt-10 col-md-8" show-arrows>
         <v-slide-item v-for="i in 6" :key="i">
           <v-card class="ma-4 pa-2" width="220">
@@ -31,8 +31,9 @@
         title="Alimentos para gatos"
         image="https://nordenpet.com.ar/wp-content/uploads/2021/07/gatos.jpg"
       />
-    </v-row>
-    <aside class="subscribe_section">
+    </div>
+
+    <aside class="subscribe_section mt-15 mb-15">
       <h1>
         Suscribite a nuestro <strong>newsletter</strong> para recibir
         <strong>ofertas y novedades</strong>
