@@ -1,0 +1,48 @@
+<template>
+  <v-container>
+    <v-row>
+      <ImageCategory
+        title="Alimentos para perros"
+        image="https://nordenpet.com.ar/wp-content/uploads/2021/07/perros.jpg"
+      />
+      <v-slide-group class="mt-10 col-md-8" show-arrows>
+        <v-slide-item v-for="i in 6" :key="i">
+          <v-card class="ma-4 pa-2" width="220">
+            <v-img
+              src="https://nordenpet.com.ar/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2019/10/Vitalcan-Balanced-Gato-Control-PH-300x300.jpg.webp"
+            />
+            <v-card-title class="text-center subtitle-1 font-weight-bold"
+              >Vitalcan Balanced Gato Control PH</v-card-title
+            >
+
+            <v-card-text>
+              <div class="title text-center">
+                Desde:
+                <b>
+                  $1230,00
+                </b>
+              </div>
+            </v-card-text>
+            <v-row justify="center" class="pa-4">
+              <v-btn color="#f0ad4e" block>
+                Comprar
+              </v-btn>
+            </v-row>
+          </v-card>
+        </v-slide-item>
+      </v-slide-group>
+    </v-row>
+  </v-container>
+</template>
+
+<script>
+  import ImageCategory from './ImageCategory';
+
+  export default {
+    name: 'DogsCategory',
+
+    components: {
+      ImageCategory,
+    },
+  };
+</script>
