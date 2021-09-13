@@ -49,8 +49,6 @@
 <style scoped>
   .navbar_container {
     background-image: linear-gradient(#212121, #030303);
-    padding: 1rem 2rem;
-    height: auto;
   }
 
   .middle_section {
