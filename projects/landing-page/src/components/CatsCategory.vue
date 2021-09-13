@@ -1,32 +1,34 @@
 <template>
   <v-container>
     <div class="d-flex">
-      <v-slide-group class="mt-10 col-md-8" show-arrows>
-        <v-slide-item v-for="i in 6" :key="i">
-          <v-card class="ma-4 pa-2" width="220">
-            <v-img
-              src="https://nordenpet.com.ar/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2019/10/Vitalcan-Balanced-Gato-Control-PH-300x300.jpg.webp"
-            />
-            <v-card-title class="text-center subtitle-1 font-weight-bold"
-              >Vitalcan Balanced Gato Control PH</v-card-title
-            >
+      <v-sheet width="70%">
+        <v-slide-group class="mt-10" show-arrows>
+          <v-slide-item v-for="i in 4" :key="i">
+            <v-card class="ma-4 pa-2" width="220">
+              <v-img
+                src="https://nordenpet.com.ar/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2019/10/Vitalcan-Balanced-Gato-Control-PH-300x300.jpg.webp"
+              />
+              <v-card-title class="text-center subtitle-1 font-weight-bold"
+                >Vitalcan Balanced Gato Control PH</v-card-title
+              >
 
-            <v-card-text>
-              <div class="title text-center">
-                Desde:
-                <b>
-                  $1230,00
-                </b>
-              </div>
-            </v-card-text>
-            <v-row justify="center" class="pa-4">
-              <v-btn color="#f0ad4e" block>
-                Comprar
-              </v-btn>
-            </v-row>
-          </v-card>
-        </v-slide-item>
-      </v-slide-group>
+              <v-card-text>
+                <div class="title text-center">
+                  Desde:
+                  <b>
+                    $1230,00
+                  </b>
+                </div>
+              </v-card-text>
+              <v-row justify="center" class="pa-4">
+                <v-btn color="#f0ad4e" block>
+                  Comprar
+                </v-btn>
+              </v-row>
+            </v-card>
+          </v-slide-item>
+        </v-slide-group>
+      </v-sheet>
       <ImageCategory
         title="Alimentos para gatos"
         image="https://nordenpet.com.ar/wp-content/uploads/2021/07/gatos.jpg"

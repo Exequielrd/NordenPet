@@ -19,7 +19,7 @@
 
 <style scoped>
   .category_container {
-    min-width: 22rem;
+    max-width: 22rem;
     height: 30rem;
     color: whitesmoke;
     position: relative;
