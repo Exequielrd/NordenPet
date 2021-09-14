@@ -1,7 +1,8 @@
 <template>
   <v-container>
-    <div class="d-flex">
-      <v-sheet width="70%">
+    <!-- Slider -->
+    <v-row>
+      <v-col md="8" cols="12">
         <v-slide-group class="mt-10" show-arrows>
           <v-slide-item v-for="i in 4" :key="i">
             <v-card class="ma-4 pa-2" width="220">
@@ -28,25 +29,34 @@
             </v-card>
           </v-slide-item>
         </v-slide-group>
-      </v-sheet>
-      <ImageCategory
-        title="Alimentos para gatos"
-        image="https://nordenpet.com.ar/wp-content/uploads/2021/07/gatos.jpg"
-      />
-    </div>
+      </v-col>
 
-    <aside class="subscribe_section mt-15 mb-15">
-      <h1>
-        Suscribite a nuestro <strong>newsletter</strong> para recibir
-        <strong>ofertas y novedades</strong>
-      </h1>
-      <form class="subscribe_form">
-        <div class="input_container">
-          <input type="email" placeholder="Email" />
-          <v-btn dark depressed>Enviar</v-btn>
-        </div>
-      </form>
-    </aside>
+      <!-- Image -->
+      <v-col cols="4">
+        <ImageCategory
+          title="Alimentos para gatos"
+          image="https://nordenpet.com.ar/wp-content/uploads/2021/07/gatos.jpg"
+        />
+      </v-col>
+    </v-row>
+
+    <!-- Subscribe section -->
+    <v-row class=" mt-15 mb-15" tag="aside">
+      <v-col class="subscribe_section" cols="12" sm="6">
+        <h1>
+          Suscribite a nuestro <strong>newsletter</strong> para recibir
+          <strong>ofertas y novedades</strong>
+        </h1>
+      </v-col>
+      <v-col class="subscribe_form">
+        <form>
+          <div class="input_container">
+            <input type="email" placeholder="Email" />
+            <v-btn dark depressed>Enviar</v-btn>
+          </div>
+        </form>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -69,10 +79,10 @@
   }
 
   .subscribe_section > h1 {
-    margin: 2rem 4rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 200;
+    font-size: 1.3rem;
   }
 
   .subscribe_form {
@@ -81,7 +91,6 @@
     min-height: 100%;
     display: grid;
     place-items: center;
-    padding: 0 3rem;
   }
 
   .input_container {
@@ -96,5 +105,12 @@
     width: 100%;
     min-height: 100%;
     outline: none;
+  }
+
+  @media (max-width: 768px) {
+    .subscribe_form {
+      width: 100%;
+      min-height: 5rem;
+    }
   }
 </style>

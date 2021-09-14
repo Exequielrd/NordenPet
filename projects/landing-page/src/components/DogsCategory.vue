@@ -1,11 +1,16 @@
 <template>
   <v-container>
-    <div class="d-flex mt-15">
-      <ImageCategory
-        title="Alimentos para perros"
-        image="https://nordenpet.com.ar/wp-content/uploads/2021/07/perros.jpg"
-      />
-      <v-sheet width="70%">
+    <!-- Image -->
+    <v-row class=" mt-15">
+      <v-col>
+        <ImageCategory
+          title="Alimentos para perros"
+          image="https://nordenpet.com.ar/wp-content/uploads/2021/07/perros.jpg"
+        />
+      </v-col>
+
+      <!-- Slider -->
+      <v-col cols="12" md="8">
         <v-slide-group show-arrows>
           <v-slide-item v-for="i in 4" :key="i">
             <v-card class="ma-4 pa-2" width="220">
@@ -32,8 +37,8 @@
             </v-card>
           </v-slide-item>
         </v-slide-group>
-      </v-sheet>
-    </div>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 

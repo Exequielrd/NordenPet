@@ -1,5 +1,5 @@
 <template>
-  <div class="category_container">
+  <div class="category_container d-none d-md-block">
     <img :src="image" :alt="title" style="width: 100%" />
     <h1 class="category_title">{{ title }}</h1>
 

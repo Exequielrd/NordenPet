@@ -1,21 +1,26 @@
 <template>
-  <v-container class="pa-15">
-    <v-row align-content="center">
+  <v-container class="pt-10 pb-10">
+    <!-- TITLE -->
+    <v-row align-content="center" class="pl-10">
       <v-img max-width="2.5rem" contain src="../assets/footprint.webp" alt="" />
       <h1 class="offers_title">OFERTAS NORDENPET</h1>
     </v-row>
-    <v-sheet class="mx-auto">
-      <v-slide-group class="mt-10" show-arrows>
-        <v-slide-item v-for="i in 6" :key="i">
-          <v-card class="ma-4 pa-2" width="220">
+
+    <!-- Slider -->
+    <v-sheet class="mx-auto" max-width="1000">
+      <v-slide-group class="mt-10" show-arrows center-active>
+        <v-slide-item v-for="i in 5" :key="i">
+          <v-card class="ma-4 pa-2" width="200">
             <v-img
               src="https://nordenpet.com.ar/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2019/10/Vitalcan-Balanced-Gato-Control-PH-300x300.jpg.webp"
             />
-            <v-card-title class="text-center subtitle-1 font-weight-bold"
-              >Vitalcan Balanced Gato Control PH</v-card-title
+            <v-card-title
+              class="text-center subtitle-2 font-weight-semibold ma-1 pa-2"
             >
+              Vitalcan Balanced Gato Control PH
+            </v-card-title>
 
-            <v-card-text>
+            <v-card-text class="pa-2 ma-1">
               <div class="title text-center">
                 Desde:
                 <b>
@@ -23,8 +28,8 @@
                 </b>
               </div>
             </v-card-text>
-            <v-row justify="center" class="pa-4">
-              <v-btn color="#f0ad4e" block>
+            <v-row justify="center" class="pl-6 pr-6 pb-4 pt-2">
+              <v-btn color="#f0ad4e" class="white--text" block>
                 Comprar
               </v-btn>
             </v-row>
@@ -51,5 +56,9 @@
     border-bottom: 2px solid #85b719;
     width: 90%;
     margin-left: 1rem;
+  }
+
+  .v-icon {
+    box-shadow: 1rem 1rem 5rem black !important;
   }
 </style>
