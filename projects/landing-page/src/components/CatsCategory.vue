@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="col-xl-8">
     <!-- Slider -->
     <v-row>
       <v-col md="8" cols="12">
@@ -41,14 +41,14 @@
     </v-row>
 
     <!-- Subscribe section -->
-    <v-row class=" mt-15 mb-15" tag="aside">
+    <v-row class=" mt-15 mb-15" tag="aside" align-content="center">
       <v-col class="subscribe_section" cols="12" sm="6">
         <h1>
           Suscribite a nuestro <strong>newsletter</strong> para recibir
           <strong>ofertas y novedades</strong>
         </h1>
       </v-col>
-      <v-col class="subscribe_form">
+      <v-col class="subscribe_form" cols="12" sm="6">
         <form>
           <div class="input_container">
             <input type="email" placeholder="Email" />

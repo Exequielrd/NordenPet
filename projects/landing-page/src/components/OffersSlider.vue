@@ -1,7 +1,7 @@
 <template>
-  <v-container class="pt-10 pb-10">
+  <v-container class="pt-10 pb-10 max-width">
     <!-- TITLE -->
-    <v-row align-content="center" class="pl-10">
+    <v-row align-content="center" class="pl-10 col-xl-8 ma-auto">
       <v-img max-width="2.5rem" contain src="../assets/footprint.webp" alt="" />
       <h1 class="offers_title">OFERTAS NORDENPET</h1>
     </v-row>

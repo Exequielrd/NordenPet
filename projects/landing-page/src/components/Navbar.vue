@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app class="navbar_container" height="120">
+  <v-app-bar app class="navbar_container " height="120">
     <div class="mobile_nav d-md-none">
       <div class="mobile_top">
         <v-app-bar-nav-icon color="white" class="d-md-none" />
@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <v-row class="pl-5 pr-5 d-none d-md-flex">
+    <v-row class="pl-5 pr-5 d-none d-md-flex col-xl-8 ma-auto">
       <!-- LOGO -->
       <v-img
         src="../assets/logoneg.png"

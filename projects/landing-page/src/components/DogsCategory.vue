@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="col-xl-8">
     <!-- Image -->
     <v-row class=" mt-15">
       <v-col>

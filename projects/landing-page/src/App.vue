@@ -25,3 +25,10 @@
     }),
   };
 </script>
+
+<style>
+  .max_whidt {
+    max-width: 1440px !important;
+    margin: auto;
+  }
+</style>
