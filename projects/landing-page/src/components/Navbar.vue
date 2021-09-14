@@ -1,7 +1,26 @@
 <template>
-  <v-app-bar app class="navbar_container" height="130">
-    <!-- LOGO -->
-    <v-row>
+  <v-app-bar app class="navbar_container" height="120">
+    <div class="mobile_nav d-md-none">
+      <div class="mobile_top">
+        <v-app-bar-nav-icon color="white" class="d-md-none" />
+        <v-img src="../assets/logoneg.png" alt="logo" max-width="12rem"></v-img>
+        <v-app-bar-nav-icon
+          color="white"
+          class="d-md-none"
+        ></v-app-bar-nav-icon>
+      </div>
+      <div class="search_input_container">
+        <input
+          class="search_input"
+          type="text"
+          placeholder="Buscar prductos..."
+        />
+        <button class="search_button">Buscar</button>
+      </div>
+    </div>
+
+    <v-row class="pl-5 pr-5 d-none d-md-flex">
+      <!-- LOGO -->
       <v-img
         src="../assets/logoneg.png"
         alt="logo"
@@ -26,10 +45,6 @@
             <v-btn large text color="white">Mi cuenta</v-btn>
             <v-btn large outlined color="#ddd">$0,00</v-btn>
           </div>
-          <v-app-bar-nav-icon
-            color="white"
-            class="d-md-none"
-          ></v-app-bar-nav-icon>
         </div>
 
         <div class="navbar_bottom_section d-none d-md-flex">
@@ -59,7 +74,6 @@
 <style scoped>
   .navbar_container {
     background-image: linear-gradient(#212121, #030303);
-    padding: 0 1rem;
   }
 
   .middle_section {
@@ -77,7 +91,7 @@
   }
 
   .search_input_container {
-    width: 60%;
+    width: 100%;
     max-width: 40rem;
     max-height: 3rem;
     background: whitesmoke;
@@ -121,5 +135,16 @@
     color: whitesmoke;
     font-size: 1rem;
     max-width: 70rem;
+  }
+
+  .mobile_nav {
+    width: 100%;
+  }
+
+  .mobile_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 </style>
