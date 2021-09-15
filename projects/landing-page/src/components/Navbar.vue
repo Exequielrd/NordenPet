@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app class="navbar_container " height="120">
+  <nav class="navbar_container">
     <div class="mobile_nav d-md-none">
       <div class="mobile_top">
         <v-app-bar-nav-icon color="white" class="d-md-none" />
@@ -9,13 +9,15 @@
           class="d-md-none"
         ></v-app-bar-nav-icon>
       </div>
-      <div class="search_input_container">
-        <input
-          class="search_input"
-          type="text"
-          placeholder="Buscar prductos..."
-        />
-        <button class="search_button">Buscar</button>
+      <div class="mobile_bottom">
+        <div class="search_input_container">
+          <input
+            class="search_input"
+            type="text"
+            placeholder="Buscar prductos..."
+          />
+          <button class="search_button">Buscar</button>
+        </div>
       </div>
     </div>
 
@@ -49,7 +51,7 @@
         <SubNav />
       </div>
     </v-row>
-  </v-app-bar>
+  </nav>
 </template>
 
 <script>
@@ -66,6 +68,7 @@
 <style scoped>
   .navbar_container {
     background-image: linear-gradient(#212121, #030303);
+    padding: 0 1rem;
   }
 
   .middle_section {
@@ -142,5 +145,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .mobile_bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .navbar_container {
+      padding: 1rem;
+    }
   }
 </style>
