@@ -15,13 +15,13 @@
               src="https://nordenpet.com.ar/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2019/10/Vitalcan-Balanced-Gato-Control-PH-300x300.jpg.webp"
             />
             <v-card-title
-              class="text-center subtitle-2 font-weight-semibold ma-1 pa-2"
+              class="text-center subtitle-2 font-weight-semibold pa-2"
             >
               Vitalcan Balanced Gato Control PH
             </v-card-title>
 
-            <v-card-text class="pa-2 ma-1">
-              <div class="title text-center">
+            <v-card-text class="pa-1">
+              <div class="subtitle-1 text-center">
                 Desde:
                 <b>
                   $1230,00

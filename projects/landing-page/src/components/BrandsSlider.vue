@@ -1,7 +1,7 @@
 <template>
   <v-sheet color="#85b719">
     <v-container fluid>
-      <v-row class="max_whidt">
+      <v-row class="max_whidt ">
         <v-col cols="12" md="4">
           <section class="brands_header pt-10 pb-10">
             <v-img width="5rem" contain src="../assets/footprint.webp" alt="" />
@@ -12,17 +12,20 @@
           </section>
         </v-col>
 
-        <v-col cols="12" md="8" align-self="center">
-          <v-slide-group
-            hide-delimiters
-            class="white my-auto"
-            show-arrows
-            center-active
-          >
-            <v-slide-item v-for="(brand, i) in brands" :key="i">
-              <v-img :src="brand" alt="" contain class="ma-10" height="200" />
-            </v-slide-item>
-          </v-slide-group>
+        <v-col
+          cols="12"
+          md="8"
+          align-self="center"
+          class="d-flex brands_container white"
+        >
+          <v-img
+            v-for="(brand, i) in brands"
+            :key="i"
+            :src="brand"
+            width="12rem"
+            contain
+            class="mr-10"
+          />
         </v-col>
       </v-row>
     </v-container>
@@ -56,5 +59,14 @@
     text-align: center;
     color: whitesmoke;
     box-shadow: 1rem 0 2rem rgba(26, 26, 26, 0.692);
+  }
+
+  .brands_container {
+    overflow: scroll;
+    scrollbar-width: 0;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 </style>

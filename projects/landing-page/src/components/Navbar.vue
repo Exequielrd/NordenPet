@@ -42,19 +42,20 @@
           </div>
 
           <div class="d-none d-md-flex">
-            <v-btn large text color="white">Mi cuenta</v-btn>
+            <v-btn large text color="white" class="ml-2 mr-2">Mi cuenta</v-btn>
             <v-btn large outlined color="#ddd">$0,00</v-btn>
           </div>
         </div>
 
         <div class="navbar_bottom_section d-none d-md-flex">
           <ul>
-            <li>Ofertas</li>
-            <li>Perro</li>
-            <li>Gato</li>
-            <li>Alimentos Humedos</li>
-            <li>Alimentos Terapeuticos</li>
-            <li>Accesorios</li>
+            <li
+              v-for="(value, i) in categories"
+              :key="i"
+              class="text-capitalize"
+            >
+              {{ value }}
+            </li>
           </ul>
           <v-btn color="#f0ad4e" class="white--text">Envio Gratis</v-btn>
         </div>
@@ -68,6 +69,20 @@
     name: 'Navbar',
 
     components: {},
+
+    data: () => ({
+      categories: [
+        'perro',
+        'gato',
+        'Alimentos humedos',
+        'alimentos terapeuticos',
+        'accesorios',
+      ],
+      subcategories: {
+        perro: ['royal canin', 'royal canin', 'royal canin', 'royal canin'],
+        gato: ['royal canin', 'royal canin', 'royal canin', 'royal canin'],
+      },
+    }),
   };
 </script>
 
@@ -135,6 +150,10 @@
     color: whitesmoke;
     font-size: 1rem;
     max-width: 70rem;
+  }
+
+  .navbar_bottom_section li {
+    cursor: pointer;
   }
 
   .mobile_nav {
