@@ -46,43 +46,20 @@
             <v-btn large outlined color="#ddd">$0,00</v-btn>
           </div>
         </div>
-
-        <div class="navbar_bottom_section d-none d-md-flex">
-          <ul>
-            <li
-              v-for="(value, i) in categories"
-              :key="i"
-              class="text-capitalize"
-            >
-              {{ value }}
-            </li>
-          </ul>
-          <v-btn color="#f0ad4e" class="white--text">Envio Gratis</v-btn>
-        </div>
+        <SubNav />
       </div>
     </v-row>
   </v-app-bar>
 </template>
 
 <script>
+  import SubNav from './SubNav';
   export default {
     name: 'Navbar',
 
-    components: {},
-
-    data: () => ({
-      categories: [
-        'perro',
-        'gato',
-        'Alimentos humedos',
-        'alimentos terapeuticos',
-        'accesorios',
-      ],
-      subcategories: {
-        perro: ['royal canin', 'royal canin', 'royal canin', 'royal canin'],
-        gato: ['royal canin', 'royal canin', 'royal canin', 'royal canin'],
-      },
-    }),
+    components: {
+      SubNav,
+    },
   };
 </script>
 
