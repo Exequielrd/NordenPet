@@ -69,6 +69,7 @@
   .navbar_container {
     background-image: linear-gradient(#212121, #030303);
     padding: 0 1rem;
+    position: relative;
   }
 
   .middle_section {
