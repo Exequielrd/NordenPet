@@ -56,7 +56,7 @@
             <li>Alimentos Terapeuticos</li>
             <li>Accesorios</li>
           </ul>
-          <v-btn color="#f0ad4e">Envio Gratis</v-btn>
+          <v-btn color="#f0ad4e" class="white--text">Envio Gratis</v-btn>
         </div>
       </div>
     </v-row>
