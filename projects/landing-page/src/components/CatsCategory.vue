@@ -9,11 +9,12 @@
               <v-img
                 src="https://nordenpet.com.ar/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2019/10/Vitalcan-Balanced-Gato-Control-PH-300x300.jpg.webp"
               />
-              <v-card-title class="text-center subtitle-1 font-weight-bold"
+              <v-card-title
+                class="text-center subtitle-1 font-weight-semibold pb-0"
                 >Vitalcan Balanced Gato Control PH</v-card-title
               >
 
-              <v-card-text>
+              <v-card-text class="pa-1">
                 <div class="title text-center">
                   Desde:
                   <b>
@@ -22,7 +23,7 @@
                 </div>
               </v-card-text>
               <v-row justify="center" class="pa-4">
-                <v-btn color="#f0ad4e" block>
+                <v-btn color="#f0ad4e" block class="white--text">
                   Comprar
                 </v-btn>
               </v-row>
