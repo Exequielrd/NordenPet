@@ -2,12 +2,14 @@
   <nav class="navbar_container">
     <div class="mobile_nav d-md-none">
       <div class="mobile_top">
-        <v-app-bar-nav-icon color="white" class="d-md-none" />
-        <v-img src="../assets/logoneg.png" alt="logo" max-width="12rem"></v-img>
         <v-app-bar-nav-icon
           color="white"
           class="d-md-none"
-        ></v-app-bar-nav-icon>
+          v-on:click="isMenuActive = !isMenuActive"
+        />
+        <v-img src="../assets/logoneg.png" alt="logo" max-width="12rem"></v-img>
+
+        <v-icon color="white">mdi-cart-variant</v-icon>
       </div>
       <div class="mobile_bottom">
         <div class="search_input_container">
@@ -20,6 +22,8 @@
         </div>
       </div>
     </div>
+
+    <div class="menu" v-if="isMenuActive"></div>
 
     <v-row class="pl-5 pr-5 d-none d-md-flex col-xl-8 ma-auto">
       <!-- LOGO -->
@@ -62,14 +66,21 @@
     components: {
       SubNav,
     },
+
+    data: () => ({
+      isMenuActive: false,
+    }),
   };
 </script>
 
 <style scoped>
   .navbar_container {
+    width: 100%;
     background-image: linear-gradient(#212121, #030303);
     padding: 0 1rem;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
 
   .middle_section {
@@ -153,6 +164,15 @@
     display: flex;
     justify-content: center;
     margin-top: 0.5rem;
+  }
+
+  .menu {
+    background: red;
+    height: 100vh;
+    width: 18rem;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   @media (max-width: 768px) {
